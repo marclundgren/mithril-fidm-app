@@ -32,6 +32,14 @@ module.exports = {
     '/news/topics/theatre-costume-design'                                   : require('./news-by-topic-theatre-costume-design'),
     '/news/topics/visual-communications'                                    : require('./news-by-topic-visual-communications'),
     '/news/trends'                                                          : require('./news-trends'),
+    '/news/trends/monthly-calendar'                                         : require('./news-trends-monthly-calendar'),
+    '/news/trends/monthly-calendar/women'                                   : require('./news-trends-monthly-calendar-women'),
+    '/news/trends/monthly-calendar/men'                                     : require('./news-trends-monthly-calendar-men'),
+    '/news/trends/monthly-calendar/interiors'                               : require('./news-trends-monthly-calendar-interiors'),
+    '/news/trends/monthly-calendar/websites'                                : require('./news-trends-monthly-calendar-websites'),
+    '/news/trends/monthly-calendar/magazines'                               : require('./news-trends-monthly-calendar-magazines'),
+    '/news/trends/monthly-calendar/books'                                   : require('./news-trends-monthly-calendar-books'),
+    '/news/trends/monthly-calendar/movies'                                  : require('./news-trends-monthly-calendar-movies'),
     '/about'                                                                : require('./about'),
     '/about/about-fidm'                                                     : require('./about-about-fidm'),
     '/about/digital-arts'                                                   : require('./about-digital-arts'),
@@ -55,7 +63,4 @@ module.exports = {
     '/events'                                                               : require('./events')
   }
 };
-
-
-
 
