@@ -1,6 +1,3 @@
-console.log('my mithril!');
-
-
 var m = (function app(window, undefined) {
   var OBJECT = "[object Object]", ARRAY = "[object Array]", STRING = "[object String]", FUNCTION = "function";
   var type = {}.toString;
@@ -21,13 +18,13 @@ var m = (function app(window, undefined) {
   initialize(window);
 
 
-  /*
+  /**
    * @typedef {String} Tag
    * A string that looks like -> div.classname#id[param=one][param2=two]
    * Which describes a DOM node
    */
 
-  /*
+  /**
    *
    * @param {Tag} The DOM node tag
    * @param {Object=[]} optional key-value pairs to be mapped to DOM attrs
@@ -642,7 +639,7 @@ var m = (function app(window, undefined) {
     var previous;
 
     var route = m.route() || '/';
-    if (route.length >= 1) {
+    if (route.length >== 1) {
       var arr = route.split('/');
 
       arr.pop();
@@ -713,12 +710,9 @@ var m = (function app(window, undefined) {
     var pairs = str.split("&"), params = {};
     for (var i = 0, len = pairs.length; i < len; i++) {
       var pair = pairs[i].split("=");
-      params[decodeSpace(pair[0])] = pair[1] ? decodeSpace(pair[1]) : ""
+      params[decodeURIComponent(pair[0])] = pair[1] ? decodeURIComponent(pair[1]) : ""
     }
     return params
-  }
-  function decodeSpace(string) {
-    return decodeURIComponent(string.replace(/\+/g, " "))
   }
   function reset(root) {
     var cacheKey = getCellCacheKey(root);

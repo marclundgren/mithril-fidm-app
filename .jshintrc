@@ -1,0 +1,7 @@
+{
+  "strict": false,
+  "undef": false,
+  "globals": {
+    "require": true
+  }
+}
